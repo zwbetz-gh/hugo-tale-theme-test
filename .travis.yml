@@ -9,7 +9,8 @@ install:
   - git clone https://github.com/gohugoio/hugoBasicExample.git
   - cd hugoBasicExample
   - git submodule add -f https://github.com/EmielH/tale-hugo.git themes/tale
-  - git submodule update --init --recursive
+  - sudo apt-get install -y tree
+  - tree
 
 script:
   - hugo -t tale
